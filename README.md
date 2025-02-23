@@ -5,9 +5,13 @@ This quick app is my attempt to understand **Open Banking Authentication**, impl
 ## 🚀 Features
 
 ✅ **OAuth2 & OpenID Connect** authentication
+
 ✅ **Bank Account API** with balance check & money transfer
+
 ✅ **Token-based API Access** (OAuth2 Bearer Tokens)
+
 ✅ **Secure Permissions & Scopes** for different banking operations
+
 ✅ **SQLite Database** for quick setup
 
 ---
