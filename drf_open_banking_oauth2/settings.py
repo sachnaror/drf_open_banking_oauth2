@@ -17,9 +17,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'oauth2_provider',  # ✅ Must be included
     'rest_framework',
-    'oauth2_provider',
-    'corsheaders',
     'bank_api',
 ]
 
@@ -59,6 +58,8 @@ REST_FRAMEWORK = {
 OAUTH2_PROVIDER = {
     'ACCESS_TOKEN_EXPIRE_SECONDS': 3600,
     'REFRESH_TOKEN_EXPIRE_SECONDS': 86400,
+    'ALLOWED_REDIRECT_URI_SCHEMES': ['http', 'https'],
+    'PKCE_REQUIRED': False,
     'SCOPES': {
         'read': 'Read your data',
         'write': 'Modify your data',
