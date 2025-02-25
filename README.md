@@ -12,6 +12,8 @@ This app is a **Django REST Framework (DRF) application** that implements **OAut
 
 ---
 
+## Directory_Structure
+
 ```sh
 ├── drf_open_banking_oauth2/
 │   ├── requirements.txt
